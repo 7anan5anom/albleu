@@ -1,0 +1,10 @@
+AL-BLEU is the Arabic Language MT automatic evaluator, a modified version of BLEU.
+It uses MADA analysis of the translation and reference. 
+
+Usage:    
+python albleu.py <path-to-evaluation-directory>
+    
+Input arguments:
+<path-to-evaluation-directory>: must contain: e-hyp (tranlsation), e-test (reference), e-hyp.mada, and e-test.mada
+    
+Note: MADA analysis files should be created specifically for the e-hyp/e-test files, i.e. every line in e-hyp corresponds to a line in e-hyp.mada in the same order. Same thing goes for e-test.
